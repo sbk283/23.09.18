@@ -4,16 +4,13 @@ package org.example;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Cmd+1 with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press F6 or click the green arrow button in the gutter to run the code.
         for (int i = 1; i <= 5; i++) {
-
-            // Press Cmd+F11 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Cmd+Shift+B.
-            System.out.println("i = " + i);
+            if (i<3) {
+                System.out.println("안녕하세요. " + i + "교시입니다.");
+            } else if (i<5) {
+                System.out.println("이제 절반입니다. " + i + "교시입니다.");
+            } else
+            System.out.println("거의 다왔습니다! " + i + "교시입니다.");
         }
     }
 }
